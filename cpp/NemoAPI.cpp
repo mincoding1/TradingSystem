@@ -7,7 +7,7 @@
 using namespace std;
 class NemoAPI {
 public:
-	void certification(string ID, string password) {
+	void certification(string ID, string pass) {
 		cout << "[NEMO]" << ID << " login GOOD\n";
 	}
 
@@ -15,7 +15,7 @@ public:
 		cout << "[NEMO]" << stockCode << " buy stock ( price : " << price << " ) * ( count : " << count << ")\n";
 	}
 
-	void ellingStock(string stockCode, int price, int count) {
+	void sellingStock(string stockCode, int price, int count) {
 		cout << "[NEMO]" << stockCode << " sell stock ( price : " << price << " ) * ( count : " << count << ")\n";
 	}
 
