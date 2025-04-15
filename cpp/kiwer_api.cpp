@@ -3,7 +3,6 @@
 
 #pragma once
 #include <iostream>
-#include <iostream>
 #include <cstdlib>
 #include <ctime>
 #include <string>
@@ -23,8 +22,8 @@ public:
 	}
 
 	int currentPrice(std::string stockCode) {
-		srand(std::time(NULL));
-		int ret = rand() % 10 * 100 + 5000;
+		std::srand(std::time(NULL));
+		int ret = std::rand() % 10 * 100 + 5000;
 		return ret;
 	}
 };
