@@ -26,8 +26,8 @@ public:
 		//minute ms초 이후 구매가 되는 방식 (최소 1 ms)
 		if (minute <= 0) minute = 1;
 		Sleep(minute);
-		srand(time(NULL));
-		int ret = rand() % 10 * 100 + 5000;
+		std::srand(std::time(NULL));
+		int ret = std::rand() % 10 * 100 + 5000;
 		return ret;
 	}
 };
